@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang=en>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+    
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Home | International Orienteering Federation    </title><link rel="preload" data-rocket-preload as="image" href="https://orienteering.sport/wp-content/uploads/2024/01/2023_skio_wcr3_middle_banner_erlingthisted.jpg" fetchpriority="high">
+
+    
+                        <meta property="og:image" content="https://orienteering.sport/wp-content/uploads/2022/09/skio_wc_2023_2_live_heather.jpg" />
+            
+    <link rel="icon" href="https://orienteering.sport/wp-content/themes/IOF/img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://orienteering.sport/wp-content/themes/IOF/img/favicon.png" type="image/x-icon" />
+
+
+    <link data-minify="1" href="https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/css/style.css?ver=1736412227" rel="stylesheet">
+
+
+
+
+    <!--[if IE]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <link data-minify="1" rel="stylesheet" href="https://orienteering.sport/wp-content/cache/min/1/releases/v5.6.3/css/all.css?ver=1736412227" crossorigin="anonymous">
+    <meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script type="rocketlazyloadscript" data-minify="1" id="cookieyes" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/cache/min/1/client_data/4df58544df6753ec2bfb5cd5/script.js?ver=1736412228" data-rocket-defer defer></script>
+<link rel="alternate" type="application/rss+xml" title="International Orienteering Federation &raquo; Home Comments Feed" href="https://orienteering.sport/sample-page/feed/" />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://orienteering.sport/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1' type='text/css' media='all' />
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='searchandfilter-css' href='https://orienteering.sport/wp-content/cache/min/1/wp-content/plugins/search-filter/style.css?ver=1736412227' type='text/css' media='all' />
+<link rel='stylesheet' id='ce_responsive-css' href='https://orienteering.sport/wp-content/plugins/simple-embed-code/css/video-container.min.css?ver=2.5.1' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='wp-smart-crop-renderer-css' href='https://orienteering.sport/wp-content/cache/min/1/wp-content/plugins/wp-smartcrop/css/image-renderer.css?ver=1736412227' type='text/css' media='all' />
+<link rel='stylesheet' id='search-filter-plugin-styles-css' href='https://orienteering.sport/wp-content/plugins/search-filter-pro/public/assets/css/search-filter.min.css?ver=2.5.9' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css-css' href='https://orienteering.sport/wp-content/themes/IOF/css/OwlCarousel2/owl.carousel.min.css?ver=6.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-theme-default-css-css' href='https://orienteering.sport/wp-content/themes/IOF/css/OwlCarousel2/owl.theme.default.min.css?ver=6.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap4-css' href='https://orienteering.sport/wp-content/themes/IOF/css/bootstrap.min.css?ver=6.7.1' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='theme_style-css' href='https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/style.css?ver=1736412227' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='theme_media-css' href='https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/css/media.css?ver=1736412227' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://orienteering.sport/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/themes/IOF/js/jquery-2.2.4.min.js?ver=6.7.1" id="jquery-js" data-rocket-defer defer></script>
+<script type="text/javascript" id="search-filter-plugin-build-js-extra">
+/* <![CDATA[ */
+var SF_LDATA = {"ajax_url":"https:\/\/orienteering.sport\/wp-admin\/admin-ajax.php","home_url":"https:\/\/orienteering.sport\/","extensions":[]};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/plugins/search-filter-pro/public/assets/js/search-filter-build.min.js?ver=2.5.9" id="search-filter-plugin-build-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/plugins/search-filter-pro/public/assets/js/chosen.jquery.min.js?ver=2.5.9" id="search-filter-plugin-chosen-js" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://orienteering.sport/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://orienteering.sport/wp-json/wp/v2/pages/2" /><link rel="canonical" href="https://orienteering.sport/" />
+<link rel='shortlink' href='https://orienteering.sport/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://orienteering.sport/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forienteering.sport%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://orienteering.sport/wp-json/oembed/1.0/embed?url=https%3A%2F%2Forienteering.sport%2F&#038;format=xml" />
+<link data-minify="1" type="text/css" rel="stylesheet" href="https://orienteering.sport/wp-content/cache/min/1/wp-content/plugins/category-specific-rss-feed-menu/wp_cat_rss_style.css?ver=1736412227" />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-216LZFNN9B"></script>
+		<script type="rocketlazyloadscript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-216LZFNN9B');
+		</script>
+
+			<style type="text/css" id="wp-custom-css">
+			body.single-event .event_title h1 {
+	text-shadow: 0 0 12px white !important;
+}
+
+
+/*.event_single_calendar::before, .event_single_calendar::after {
+background:none !important;
+}*/
+
+
+.default_page form input[type="text"] {
+	border:#307EA1 1px solid;
+	max-width:50%;
+}
+
+#sponsors_carousel img {
+}
+#sponsors_carousel > div.owl-stage-outer > div > div:nth-child(2) > div > a > img {
+}
+#partners_carousel img {
+	max-height:100px;
+}
+
+
+footer a, footer a:hover {
+	color:#ffffff!important;
+}
+.logo {
+	width:176px
+}
+ul.sw_post_cats a, ul.news_menu a {
+	margin-right: 10px;
+	margin-bottom:10px;
+}
+ul.sw_post_cats a:hover {
+	box-shadow:none!important;
+}
+
+header nav .child .top_menu a {
+margin-right:10px;
+}
+
+header .page_img img {
+	max-height:500px;
+}
+
+/* Paloma form */
+form.paloma-form input[type="text"] {
+	  border: 1px solid #cccccc;
+		max-width:300px;
+}
+
+form.paloma-form input[type="submit"] {
+  background-color: #307EA1; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	margin-bottom:20px;
+}
+
+p {
+	font-size:18px;
+}
+h1 {
+	font-size:34px;
+}
+.text h2 {
+	font-size: 24px;
+	font-weight:900;
+}
+.text h3 {
+	font-size: 22px;
+	font-weight:900;
+}
+.text h4 {
+	font-size: 20px;
+	font-weight:900;
+}
+ol li {
+list-style-type: decimal;
+}
+ol {
+	margin:20px;
+}
+
+.discipline_event_item a:hover{
+	text-decoration:none;
+}
+		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+ <script type="rocketlazyloadscript" data-minify="1" language="JavaScript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/search-filter/script.js?ver=1736412228" data-rocket-defer defer></script>
+    <script type="rocketlazyloadscript">
+        var ajaxurl = 'https://orienteering.sport/wp-admin/admin-ajax.php';
+        document.cookie = "user_timezone= " + new Date().getTimezoneOffset()/60*-1;
+    </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-G5PJ5FC4BT"></script>
+        <script type="rocketlazyloadscript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G5PJ5FC4BT');
+        </script>
+<style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta name="generator" content="WP Rocket 3.17.2.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_automatic_lazy_rendering wpr_oci wpr_image_dimensions wpr_minify_css wpr_desktop wpr_preload_links" /></head>
+<body class="home page-template page-template-front_page page-template-front_page-php page page-id-2 d-flex flex-column">
+<div  class="wrapper flex-grow-1">
+    <header >
+        <div  class="container-fluid shadow eltop">
+            <div class="row justify-content-between align-items-center">
+                <a href="https://orienteering.sport" class="col-auto logo d-none  d-xl-block">
+                    <img width="160" height="66" src="https://orienteering.sport/wp-content/themes/IOF/img/logo/iof.svg" alt="International Orienteering Federation" />
+                </a>
+                <nav class="flex-grow-1 d-flex flex-column justify-content-end">
+                    <div class="col-12 child d-flex justify-content-between align-items-center">
+                        <a href="#" class="top_menu_burger">
+                            IOF SITES                        </a>
+                        <ul id="menu-top-external-links-menu-sport" class="menu top_menu d-xl-flex align-items-center"><li id="menu-item-49589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-49589"><a href="https://orienteering.sport/" aria-current="page">IOF</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="https://orienteering.sport/live/">LIVE</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="https://orienteering.sport/worldcup-page/">World Cup</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a target="_blank" href="https://eventor.orienteering.org/Events">Calendar &#038; Results</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a target="_blank" href="https://ranking.orienteering.org/">Ranking</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a target="_blank" href="http://worldorienteeringweek.com/">World Orienteering Week</a></li>
+<li id="menu-item-64042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64042"><a href="https://orienteering.sport/2022-tick-borne-encephalitis-tbe-dont-run-the-risk/">TBE – Don’t run the risk</a></li>
+</ul>                        <ul class="socials d-flex align-items-center">
+                                                                                        <li>
+                                    <a href="https://www.facebook.com/IOForienteering" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                                                                        <li>
+                                    <a href="https://instagram.com/IOForienteering" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="main d-flex justify-content-end justify-content-xl-start align-items-center">
+                        <a href="https://orienteering.sport" class="col logo d-block d-xl-none">
+                            <img width="160" height="66" src="https://orienteering.sport/wp-content/themes/IOF/img/logo/iof.svg" alt="International Orienteering Federation" />
+                        </a>
+                        <a href="#" class="main_menu_burger order-1 pl-3 pr-3">
+                            <!--<i class="fas fa-bars"></i>-->
+                            <img width="20" height="16" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2016'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/themes/IOF/img/menu.svg" /><noscript><img width="20" height="16" src="https://orienteering.sport/wp-content/themes/IOF/img/menu.svg" alt="" /></noscript>
+                        </a>
+                        <div class="d-xl-flex main_menuWrap">
+                            <ul id="menu-main-menu" class="menu main_menu d-xl-flex align-items-center"><li id="menu-item-38162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38162"><a href="#">Orienteering</a>
+<ul class="sub-menu">
+	<li id="menu-item-38858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38858"><a href="#">Column 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://orienteering.sport/orienteering/">About Orienteering</a></li>
+		<li id="menu-item-65128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65128"><a href="https://orienteering.sport/worldcup-page/">Follow Orienteering World Cup</a></li>
+		<li id="menu-item-38719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38719"><a href="https://orienteering.sport/orienteering/world-orienteering-championshops-woc/">Follow World Orienteering Championships</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38859" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38859"><a href="#">Column 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-38435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38435"><a href="https://orienteering.sport/orienteering/world-ranking/">World Ranking</a></li>
+		<li id="menu-item-38434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38434"><a href="https://orienteering.sport/orienteering/events-and-results/">Events and Results</a></li>
+		<li id="menu-item-38208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38208"><a href="https://orienteering.sport/orienteering/competition-rules/">Competition Rules</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38860"><a href="#">Column 3</a>
+	<ul class="sub-menu">
+		<li id="menu-item-41629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41629"><a href="https://orienteering.sport/orienteering/resources/">Resources</a></li>
+		<li id="menu-item-38711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-38711"><a href="https://orienteering.sport/orienteering/internal/">Internal</a>
+		<ul class="sub-menu">
+			<li id="menu-item-38210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38210"><a href="https://orienteering.sport/orienteering/internal/event-organising/">Event Organising</a></li>
+			<li id="menu-item-39200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39200"><a href="https://orienteering.sport/orienteering/internal/event-advising/">Event Advising</a></li>
+			<li id="menu-item-38167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38167"><a href="https://orienteering.sport/orienteering/internal/foot-orienteering-commission/">Foot Orienteering Commission</a></li>
+			<li id="menu-item-38168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38168"><a href="https://orienteering.sport/orienteering/internal/foot-orienteering-athletes-advisory-group/">Foot Orienteering Athletes’ Advisory Group</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-38163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38163"><a href="#">SkiO</a>
+<ul class="sub-menu">
+	<li id="menu-item-38857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38857"><a href="#">Column 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-38192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38192"><a href="https://orienteering.sport/skio/">About Ski Orienteering</a></li>
+		<li id="menu-item-39394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39394"><a href="https://orienteering.sport/skio/follow-world-ski-orienteering-championships/">Follow World Ski Orienteering Championships</a></li>
+		<li id="menu-item-39393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39393"><a href="https://orienteering.sport/skio/follow-world-cup-in-ski-orienteering/">Follow World Cup in Ski Orienteering</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38865" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38865"><a href="#">Column 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-39432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39432"><a href="https://orienteering.sport/skio/world-ranking/">World Ranking</a></li>
+		<li id="menu-item-39429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39429"><a href="https://orienteering.sport/skio/events-and-results/">Events and Results</a></li>
+		<li id="menu-item-39415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39415"><a href="https://orienteering.sport/skio/competition-rules/">Competition Rules</a></li>
+		<li id="menu-item-63315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63315"><a href="https://orienteering.sport/skio/faq-ban-of-fluorinated-waxes-in-skio/">FAQ – Ban of fluorinated waxes in SkiO</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38866"><a href="#">Column 3</a>
+	<ul class="sub-menu">
+		<li id="menu-item-41632" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41632"><a href="https://orienteering.sport/skio/resources-skio/">Resources</a></li>
+		<li id="menu-item-39396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39396"><a href="https://orienteering.sport/skio/internal/">Internal</a>
+		<ul class="sub-menu">
+			<li id="menu-item-39458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39458"><a href="https://orienteering.sport/skio/internal/event-organising/">Event Organising</a></li>
+			<li id="menu-item-39622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39622"><a href="https://orienteering.sport/skio/internal/event-advising/">Event Advising</a></li>
+			<li id="menu-item-38170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38170"><a href="https://orienteering.sport/skio/internal/ski-orienteering-commission/">Ski Orienteering Commission</a></li>
+			<li id="menu-item-38171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38171"><a href="https://orienteering.sport/skio/internal/ski-orienteering-athletes-advisory-group/">Ski Orienteering Athletes’ Advisory Group</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-38164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38164"><a href="#">MTBO</a>
+<ul class="sub-menu">
+	<li id="menu-item-38856" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38856"><a href="#">Column 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://orienteering.sport/mtbo/">About MTB Orienteering</a></li>
+		<li id="menu-item-39408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39408"><a href="https://orienteering.sport/mtbo/follow-world-mtb-orienteering-championships/">Follow World MTB Orienteering Championships</a></li>
+		<li id="menu-item-39407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39407"><a href="https://orienteering.sport/mtbo/follow-world-cup-in-mtb-orienteering/">Follow World Cup in MTB Orienteering</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38867"><a href="#">Column 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-39433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39433"><a href="https://orienteering.sport/mtbo/world-ranking/">World Ranking</a></li>
+		<li id="menu-item-39418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39418"><a href="https://orienteering.sport/mtbo/events-and-results/">Events and Results</a></li>
+		<li id="menu-item-39416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39416"><a href="https://orienteering.sport/mtbo/competition-rules/">Competition Rules</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38868"><a href="#">Column 3</a>
+	<ul class="sub-menu">
+		<li id="menu-item-41636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41636"><a href="https://orienteering.sport/mtbo/resources-mtbo/">Resources</a></li>
+		<li id="menu-item-39435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39435"><a href="https://orienteering.sport/mtbo/internal/">Internal</a>
+		<ul class="sub-menu">
+			<li id="menu-item-39445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39445"><a href="https://orienteering.sport/mtbo/internal/event-organising/">Event Organising</a></li>
+			<li id="menu-item-39619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39619"><a href="https://orienteering.sport/mtbo/internal/event-advising/">Event Advising</a></li>
+			<li id="menu-item-38175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38175"><a href="https://orienteering.sport/mtbo/internal/mtb-orienteering-commission/">MTB Orienteering Commission</a></li>
+			<li id="menu-item-38176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38176"><a href="https://orienteering.sport/mtbo/internal/mtb-orienteering-athletes-advisory-group/">MTB Orienteering Athletes’ Advisory Group</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-38165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38165"><a href="#">TrailO</a>
+<ul class="sub-menu">
+	<li id="menu-item-38855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38855"><a href="#">Column 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://orienteering.sport/trailo/">About Trail Orienteering</a></li>
+		<li id="menu-item-39409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39409"><a href="https://orienteering.sport/trailo/main-events/wtoc/">World Trail Orienteering Championships (WTOC)</a></li>
+		<li id="menu-item-39411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39411"><a href="https://orienteering.sport/trailo/main-events/european-cup-in-trailo/">European Cup in TrailO (ECTO)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38869"><a href="#">Column 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-39455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39455"><a href="https://orienteering.sport/trailo/world-ranking/">World Ranking</a></li>
+		<li id="menu-item-39419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39419"><a href="https://orienteering.sport/trailo/events-and-results/">Events and Results</a></li>
+		<li id="menu-item-39417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39417"><a href="https://orienteering.sport/trailo/competition-rules/">Competition Rules</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38870"><a href="#">Column 3</a>
+	<ul class="sub-menu">
+		<li id="menu-item-41640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41640"><a href="https://orienteering.sport/trailo/resources-trailo/">Resources</a></li>
+		<li id="menu-item-39451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39451"><a href="https://orienteering.sport/trailo/internal/">Internal</a>
+		<ul class="sub-menu">
+			<li id="menu-item-39461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39461"><a href="https://orienteering.sport/trailo/internal/event-organising/">Event Organising</a></li>
+			<li id="menu-item-39625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39625"><a href="https://orienteering.sport/trailo/internal/event-advising/">Event Advising</a></li>
+			<li id="menu-item-38178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38178"><a href="https://orienteering.sport/trailo/internal/trail-orienteering-commission/">Trail Orienteering Commission</a></li>
+			<li id="menu-item-38177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38177"><a href="https://orienteering.sport/trailo/internal/trail-orienteering-athletes-advisory-group/">Trail Orienteering Athletes’ Advisory Group</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-41020" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41020"><a href="https://orienteering.sport/news_list/">News</a></li>
+<li id="menu-item-38021" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38021"><a href="#">Inside IOF</a>
+<ul class="sub-menu">
+	<li id="menu-item-38854" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38854"><a href="#">Column 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-44592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44592"><a href="https://orienteering.sport/faq-suspended-members/">FAQ &#8211; Suspended members</a></li>
+		<li id="menu-item-37843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37843"><a href="https://orienteering.sport/iof/anti-doping/">Anti-Doping</a></li>
+		<li id="menu-item-58172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58172"><a href="https://orienteering.sport/iof/fair-play/">Fair Play</a></li>
+		<li id="menu-item-42851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42851"><a href="https://orienteering.sport/iof/for-athletes/">For athletes</a></li>
+		<li id="menu-item-42852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42852"><a href="https://orienteering.sport/iof/for-event-organiser/">For event organiser</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38871"><a href="#">Column 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-42856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42856"><a href="https://orienteering.sport/iof/rules/">Rules</a></li>
+		<li id="menu-item-42854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42854"><a href="https://orienteering.sport/iof/mapping/">Mapping</a></li>
+		<li id="menu-item-42857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42857"><a href="https://orienteering.sport/iof/it/">IT</a></li>
+		<li id="menu-item-42858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42858"><a href="https://orienteering.sport/iof/environment-and-sustainability/">Environment and sustainability</a></li>
+	</ul>
+</li>
+	<li id="menu-item-38872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38872"><a href="#">Column 3</a>
+	<ul class="sub-menu">
+		<li id="menu-item-38157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38157"><a href="https://orienteering.sport/iof/governance-and-organisation/">Governance and organisation</a></li>
+		<li id="menu-item-37857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37857"><a href="https://orienteering.sport/iof/sponsoring-and-advertisement/">Sponsoring and advertisement</a></li>
+		<li id="menu-item-42853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42853"><a href="https://orienteering.sport/iof/communication/">Communication and Media</a></li>
+		<li id="menu-item-38184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38184"><a href="https://orienteering.sport/iof/history-and-archives/">History and archives</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-58119" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58119"><a href="#">Learn &#038; Meet</a>
+<ul class="sub-menu">
+	<li id="menu-item-58120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58120"><a href="#">Column 1</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64924"><a href="https://education.orienteering.sport/">E-learning Courses</a></li>
+		<li id="menu-item-62693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62693"><a href="https://orienteering.sport/iof/search-materials/">Educational Material</a></li>
+		<li id="menu-item-58127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58127"><a href="https://orienteering.sport/iof/global-development/world-orienteering-day/">World Orienteering Week</a></li>
+		<li id="menu-item-58182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58182"><a href="https://orienteering.sport/iof/global-development/recreational-orienteering/">Recreational Orienteering</a></li>
+	</ul>
+</li>
+	<li id="menu-item-58121" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58121"><a href="#">Column 2</a>
+	<ul class="sub-menu">
+		<li id="menu-item-62488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62488"><a href="https://orienteering.sport/iof/global-development/learn-and-meet/global-development-webinars/">Global Development Webinars</a></li>
+		<li id="menu-item-58133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58133"><a href="https://orienteering.sport/iof/global-development/globaldevelopmentandexchange/regional-coordinators/">Development Consultants and Support</a></li>
+		<li id="menu-item-58194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58194"><a href="https://orienteering.sport/iof/global-development/learn-and-meet/global-development-conferences/global-development-conference-2022/">Regional Development Conferences</a></li>
+		<li id="menu-item-64407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64407"><a href="https://orienteering.sport/iof/global-development/maze-o/">Maze Orienteering</a></li>
+		<li id="menu-item-58124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58124"><a href="https://orienteering.sport/iof/global-development/globaldevelopmentandexchange/start-up-kit/">Start-up Kit</a></li>
+	</ul>
+</li>
+	<li id="menu-item-58122" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58122"><a href="#">Column 3</a>
+	<ul class="sub-menu">
+		<li id="menu-item-58129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58129"><a href="https://orienteering.sport/iof/global-development/globaldevelopmentandexchange/woc-clinic/">IOF WOC Clinic</a></li>
+		<li id="menu-item-68165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68165"><a href="https://orienteering.sport/iof/global-development/learn-and-meet/young-leaders-academy-2025/">IOF Young Leaders Academy</a></li>
+		<li id="menu-item-71952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71952"><a href="https://orienteering.sport/iof/global-development/learn-and-meet/iof-international-training-camps-for-youths/">IOF International Training Camps for Youths</a></li>
+		<li id="menu-item-58131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58131"><a href="https://orienteering.sport/iof/global-development/globaldevelopmentandexchange/o-ringen-academy/">O-Ringen Academy</a></li>
+		<li id="menu-item-58130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58130"><a href="https://orienteering.sport/iof/global-development/regional-and-youth-development-commission/">Global Development Commission</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-39865" class="m_red2 menu-item menu-item-type-post_type menu-item-object-page menu-item-39865"><a href="https://orienteering.sport/live/">LIVE</a></li>
+<li id="menu-item-65214" class="m_blue2 menu-item menu-item-type-custom menu-item-object-custom menu-item-65214"><a href="https://tv.orienteering.sport/">TV</a></li>
+</ul>                        </div>
+
+                                                    <div class="search_icon">
+                                <!--<i class="fas fa-search"></i>-->
+                                <img width="16" height="16" src="https://orienteering.sport/wp-content/themes/IOF/img/search.svg" alt="" />
+                            </div>
+                            <div class="search_form shadow">
+                                <form role="search" method="get" id="searchform" class="searchform d-flex align-items-center" action="https://orienteering.sport/">
+    <input type="text" value="" placeholder="Search" name="s" id="s" />
+
+    <ul class="search_type_list">
+        <li>
+            <input type="radio" id="search_type_post" name="search_type" value="post">
+            <label for="search_type_post">News</label>
+        </li>
+        <li>
+            <input type="radio" id="search_type_page" name="search_type" value="page">
+            <label for="search_type_page">Page</label>
+        </li>
+        <!--<li>
+            <input type="radio" id="search_type_event" name="search_type" value="event">
+            <label for="search_type_event">Events</label>
+        </li>-->
+    </ul>
+
+    <button type="submit" id="searchsubmit"><i class="fas fa-search"></i></button>
+            <a href="https://orienteering.sport/file-search/" class="file_search_link">
+            Go to file search        </a>
+    </form>                            </div>
+                        
+                                            </div>
+                </nav>
+            </div>
+        </div>
+
+                					            </header>
+    <main >
+        
+        <script type="rocketlazyloadscript">
+            var startPosition = 0,
+                startEventsEl = '';
+        </script>
+	<section  class="home_section test">
+
+
+
+
+  <div class="carousel_block shadow">
+				<div class="container-fluid p-0">
+					<div class="col-12 col-md-12 p-0">
+						<div id="main-carousel" class="owl-carousel owl-theme main-carousel">
+																								<div class="item main-carousel__item">
+										<a class=" w-100" target="_blank" href="https://orienteering.sport/finland-won-entertaining-sprint-relay-at-fisu-university-games/">
+											<img fetchpriority="high" width="2200" height="825" src="https://orienteering.sport/wp-content/uploads/2024/01/2023_skio_wcr3_middle_banner_erlingthisted.jpg" alt="banner">
+
+
+											<div class="main-carousel__overlap">
+												<div class="main-carousel__text">
+													Relive the SkiO races from FISU Winter World University Games												</div>
+											</div>
+										</a>
+									</div>
+																	<div class="item main-carousel__item">
+										<a class=" w-100" target="_blank" href="https://orienteering.sport/podcast-eirik-langedal-breivik-on-his-golden-middle-distance-race-at-eoc/">
+											<img width="1283" height="401" src="https://orienteering.sport/wp-content/uploads/2024/12/2024_eoc_banner_eirik_langedal_breivik.jpg" alt="banner">
+
+
+											<div class="main-carousel__overlap">
+												<div class="main-carousel__text">
+													Podcast: Eirik Langedal Breivik on the middle distance gold in Hungary												</div>
+											</div>
+										</a>
+									</div>
+																	<div class="item main-carousel__item">
+										<a class=" w-100" target="_blank" href="https://www.youtube.com/@IOFOrienteering">
+											<img width="2048" height="640" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202048%20640'%3E%3C/svg%3E" alt="banner" data-lazy-src="https://orienteering.sport/wp-content/uploads/2024/07/2024_wocsprint_banner_kristina_lindgren.jpg"><noscript><img width="2048" height="640" src="https://orienteering.sport/wp-content/uploads/2024/07/2024_wocsprint_banner_kristina_lindgren.jpg" alt="banner"></noscript>
+
+
+											<div class="main-carousel__overlap">
+												<div class="main-carousel__text">
+													Relive all the international 2024 races on IOF's Youtube-channel												</div>
+											</div>
+										</a>
+									</div>
+																					</div>
+					</div>
+				</div>
+			</div>
+		  
+							<div class="carousel_block shadow">
+									<div class="container-fluid pt-2">
+						<div class="hidden_block row flex-wrap flex-md-nowrap align-items-center">
+							<div class="col-12 col-md-2 carousel_title text-center text-md-left pt-3 pt-md-0">
+							   Main sponsors							</div>
+							<div class="col-12 col-md-8 px-md-0">
+								<div id="sponsors_main_carousel" class="owl-carousel owl-theme carousel">
+																			<div class="item w-100 main_sponsor">
+																						<a class=" w-100" target="_blank" href="http://www.cx80.pl/en/">
+												<img width="800" height="200" src="https://orienteering.sport/wp-content/uploads/2023/04/cx80-logo-iof-webb_800_200.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://orienteering.sport/wp-content/uploads/2023/04/cx80-logo-iof-webb_800_200.jpg 800w, https://orienteering.sport/wp-content/uploads/2023/04/cx80-logo-iof-webb_800_200-300x75.jpg 300w, https://orienteering.sport/wp-content/uploads/2023/04/cx80-logo-iof-webb_800_200-768x192.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />											</a>
+										</div>
+																			<div class="item w-100 main_sponsor">
+																						<a class=" w-100" target="_blank" href="https://t-kartor.com/">
+												<img width="800" height="200" src="https://orienteering.sport/wp-content/uploads/2022/03/live-tkartor.png" class="attachment-full size-full wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2022/03/live-tkartor.png 800w, https://orienteering.sport/wp-content/uploads/2022/03/live-tkartor-300x75.png 300w, https://orienteering.sport/wp-content/uploads/2022/03/live-tkartor-768x192.png 768w" sizes="(max-width: 800px) 100vw, 800px" />											</a>
+										</div>
+																			<div class="item w-100 main_sponsor">
+																						<a class=" w-100" target="_blank" href="https://www.sportident.com/">
+												<img width="400" height="70" src="https://orienteering.sport/wp-content/uploads/2022/03/sportident_logo_rgb_400px.png" class="attachment-full size-full wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2022/03/sportident_logo_rgb_400px.png 400w, https://orienteering.sport/wp-content/uploads/2022/03/sportident_logo_rgb_400px-300x53.png 300w" sizes="(max-width: 400px) 100vw, 400px" />											</a>
+										</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+				
+				
+			</div>
+		
+		
+<!--
+					<div class="banner">
+				<div class="container mt-1">
+					<div class="my-4">
+						<div id="banners_carousel" class="owl-carousel owl-theme carousel">
+															<div class="item">
+																			<a target="_blank" href="https://orienteering.sport/finland-won-entertaining-sprint-relay-at-fisu-university-games/">
+											<img width="2200" height="825" src="https://orienteering.sport/wp-content/uploads/2024/01/2023_skio_wcr3_middle_banner_erlingthisted.jpg" alt="" />
+										</a>
+																	</div>
+															<div class="item">
+																			<a target="_blank" href="https://orienteering.sport/podcast-eirik-langedal-breivik-on-his-golden-middle-distance-race-at-eoc/">
+											<img width="1283" height="401" src="https://orienteering.sport/wp-content/uploads/2024/12/2024_eoc_banner_eirik_langedal_breivik.jpg" alt="" />
+										</a>
+																	</div>
+															<div class="item">
+																			<a target="_blank" href="https://www.youtube.com/@IOFOrienteering">
+											<img width="2048" height="640" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202048%20640'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2024/07/2024_wocsprint_banner_kristina_lindgren.jpg" /><noscript><img width="2048" height="640" src="https://orienteering.sport/wp-content/uploads/2024/07/2024_wocsprint_banner_kristina_lindgren.jpg" alt="" /></noscript>
+										</a>
+																	</div>
+													</div>
+					</div>
+				</div>
+			</div>
+		-->
+					<div class="news_list">
+				<div  class="container">
+					<div  class="row">
+														<div class="col-12 col-md-6 pt-3 pb-3">
+									<div class="NI_wrap shadow">
+																					<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+												<a href="https://orienteering.sport/sweden-to-host-world-cup-round-in-2027/" class="image">
+													<img width="570" height="325" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20570%20325'%3E%3C/svg%3E" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2025/02/2021_owc_idre_relay_williamhollowell-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/02/2021_owc_idre_relay_williamhollowell-270x155.jpg 270w" data-lazy-sizes="(max-width: 570px) 100vw, 570px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2025/02/2021_owc_idre_relay_williamhollowell-570x325.jpg" /><noscript><img width="570" height="325" src="https://orienteering.sport/wp-content/uploads/2025/02/2021_owc_idre_relay_williamhollowell-570x325.jpg" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2025/02/2021_owc_idre_relay_williamhollowell-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/02/2021_owc_idre_relay_williamhollowell-270x155.jpg 270w" sizes="(max-width: 570px) 100vw, 570px" /></noscript>												</a>
+											</div>
+																				<div class="NI_details  p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/sweden-to-host-world-cup-round-in-2027/">
+													Sweden to host World Cup Round in 2027												</a>
+											</h3>
+											<p>
+																								Sweden will also welcome the world&#8217;s best orienteers in 2027, where one of the year&#8217;s World Cup Rounds will be held in the Hälsingland-region. There will be three forest races: Long, Middle and Relay in the f...											</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="date">
+													2025-02-04												</div>
+												<div class="tags">
+													<a href="https://orienteering.sport/news/front/">Front</a><a href="https://orienteering.sport/news/orienteering/">Orienteering</a>												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="col-12 col-md-6 pt-3 pb-3">
+									<div class="NI_wrap shadow">
+																					<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+												<a href="https://orienteering.sport/portugal-to-host-forest-eoc-in-2028/" class="image">
+													<img width="570" height="325" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20570%20325'%3E%3C/svg%3E" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2025/01/eoc_2028_logo_news-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/01/eoc_2028_logo_news-270x155.jpg 270w" data-lazy-sizes="(max-width: 570px) 100vw, 570px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2025/01/eoc_2028_logo_news-570x325.jpg" /><noscript><img width="570" height="325" src="https://orienteering.sport/wp-content/uploads/2025/01/eoc_2028_logo_news-570x325.jpg" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2025/01/eoc_2028_logo_news-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/01/eoc_2028_logo_news-270x155.jpg 270w" sizes="(max-width: 570px) 100vw, 570px" /></noscript>												</a>
+											</div>
+																				<div class="NI_details  p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/portugal-to-host-forest-eoc-in-2028/">
+													Portugal to host forest EOC in 2028												</a>
+											</h3>
+											<p>
+																								The world&#8217;s best orienteers may well start preparing for Iberian terrains for 2028 as the European Orienteering Championships will be held in Portugal. EOC will at the same time serve as the final in the 2028 World...											</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="date">
+													2025-01-28												</div>
+												<div class="tags">
+													<a href="https://orienteering.sport/news/front/">Front</a><a href="https://orienteering.sport/news/orienteering/">Orienteering</a>												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="col-12 col-md-6 pt-3 pb-3">
+									<div class="NI_wrap shadow">
+																					<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+												<a href="https://orienteering.sport/new-zealand-continues-golden-course-at-oceania-championships/" class="image">
+													<img width="570" height="325" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20570%20325'%3E%3C/svg%3E" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2025/01/2025_occ_long_w21_podium-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/01/2025_occ_long_w21_podium-270x155.jpg 270w" data-lazy-sizes="(max-width: 570px) 100vw, 570px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2025/01/2025_occ_long_w21_podium-570x325.jpg" /><noscript><img width="570" height="325" src="https://orienteering.sport/wp-content/uploads/2025/01/2025_occ_long_w21_podium-570x325.jpg" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2025/01/2025_occ_long_w21_podium-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/01/2025_occ_long_w21_podium-270x155.jpg 270w" sizes="(max-width: 570px) 100vw, 570px" /></noscript>												</a>
+											</div>
+																				<div class="NI_details  p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/new-zealand-continues-golden-course-at-oceania-championships/">
+													New Zealand continues golden course at Oceania Championships												</a>
+											</h3>
+											<p>
+																								The athletes at the 2025 Oceania Orienteering Championships continued their fight for medals in the coastal terrains of New Zealand&#8217;s lower North Island on Sunday and Monday. Compared to Saturday’s hot middle dista...											</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="date">
+													2025-01-27												</div>
+												<div class="tags">
+													<a href="https://orienteering.sport/news/front/">Front</a><a href="https://orienteering.sport/news/orienteering/">Orienteering</a><a href="https://orienteering.sport/news/live/">Live</a>												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						<div class="col-12 col-md-6 pt-3 pb-3 ">
+																<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/kiwis-dominate-first-half-of-ooc/">
+													Kiwis dominate first half of Oceania Championships												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/oceania-championships-2025-begin-in-new-zealand-on-friday/">
+													Oceania Championships 2025 begin in New Zealand on Friday												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/finland-won-entertaining-sprint-relay-at-fisu-university-games/">
+													Finland won entertaining Sprint Relay at FISU University Games												</a>
+											</h3>
+										</div>
+									</div>
+															<div class="mt-4 d-flex align-items-center justify-content-between nav_btns">
+								<a class="ml-auto btn" href="https://orienteering.sport/news_list/">
+									MORE NEWS ITEMS								</a>
+							</div>
+
+															<div class="subscribe_block p-4 mt-4 ">
+									<div class="text v2">
+										<p>Subscribe to our newsletter</p>
+									</div>
+									<form id="subscribe_form" class="form mt-4" name="subscribe_form" action="" method="post">
+										<div class="fileds_group d-flex align-items-center">
+											<input type="email" class="email w-50 mr-3 v2" name="email" placeholder="Email Address" required>
+											<input type="submit" name="submit" class="btn v2" value="SUBSCRIBE">
+										</div>
+										<input type="hidden" name="form_title" value="New subscriber">
+										<div class="successful" style="display: none;">Successful</div>
+									</form>
+								</div>
+													</div>
+					</div>
+				</div>
+			</div>
+		
+		<div class="line-block large"></div>
+
+
+
+			<div class="carousel_block shadow">
+				<div class="container-fluid p-0">
+					<div class="col-12 col-md-12 px-md-0">
+						<div id="main-carousel2" class="owl-carousel owl-theme main-carousel">
+																								<div class="item main-carousel__item">
+										<a class=" w-100" target="_blank" href="">
+											<img width="1500" height="503" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201500%20503'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2023/05/2023_wcr1_banner.jpg"><noscript><img width="1500" height="503" src="https://orienteering.sport/wp-content/uploads/2023/05/2023_wcr1_banner.jpg" alt=""></noscript>
+										</a>
+									</div>
+																					</div>
+					</div>
+				</div>
+			</div>
+
+
+		<div class="home_list_events mt-5 pb-5 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-10 offset-lg-1">
+						<div class="front_event_filters">
+							<div class="top d-flex flex-column flex-lg-row justify-content-between align-items-center">
+								<div class="FE_title">
+									UPCOMING EVENTS								</div>
+								<ul class="FE_filter d-flex justify-content-end align-items-center">
+									<li discipline="dt_22">Orienteering</li><li discipline="dt_23">SkiO</li><li discipline="dt_24">MTBO</li><li discipline="dt_25">TrailO</li>								</ul>
+							</div>
+							<div class="bottom mt-4">
+								<div class="FE_results front_event_table">
+
+																				<a  href="
+														https://orienteering.sport/event/ski-orienteering-world-cup-round-2-2/														" class="front_event_tr  dt_23">
+												<h3 class="front_event_td name col-12 col-lg-8 justify-content-between justify-content-lg-start">
+													Ski Orienteering World Cup, Round 2
+																									</h3>
+												<div class="front_event_td justify-content-start justify-content-lg-center details col-12 col-lg-4 row">
+													<time class="date col-auto col-lg-7 offset-lg-1">
+														15-17 Feb 2025													</time>
+													<div class="country  col-auto  col-lg-4">
+														Germany													</div>
+												</div>
+											</a>
+																					<a target="_blank" href="
+														https://orienteering.sport/go-to/?url_to=https://eventor.orienteering.org/Events/Show/8420														" class="front_event_tr  dt_23">
+												<h3 class="front_event_td name col-12 col-lg-8 justify-content-between justify-content-lg-start">
+													European Ski Orienteering Championships 2025
+																									</h3>
+												<div class="front_event_td justify-content-start justify-content-lg-center details col-12 col-lg-4 row">
+													<time class="date col-auto col-lg-7 offset-lg-1">
+														20-23 Mar 2025													</time>
+													<div class="country  col-auto  col-lg-4">
+														Finland													</div>
+												</div>
+											</a>
+																					<a  href="
+														https://orienteering.sport/event/european-mtb-orienteering-championships-2025/														" class="front_event_tr  dt_24">
+												<h3 class="front_event_td name col-12 col-lg-8 justify-content-between justify-content-lg-start">
+													Apresport European MTB Orienteering Championships and CX80 World Cup
+																									</h3>
+												<div class="front_event_td justify-content-start justify-content-lg-center details col-12 col-lg-4 row">
+													<time class="date col-auto col-lg-7 offset-lg-1">
+														15-18 May 2025													</time>
+													<div class="country  col-auto  col-lg-4">
+														Lithuania													</div>
+												</div>
+											</a>
+																					<a  href="
+														https://orienteering.sport/event/orienteering-world-cup-round-1-5/														" class="front_event_tr  dt_22">
+												<h3 class="front_event_td name col-12 col-lg-8 justify-content-between justify-content-lg-start">
+													Orienteering World Cup, Round 1
+																									</h3>
+												<div class="front_event_td justify-content-start justify-content-lg-center details col-12 col-lg-4 row">
+													<time class="date col-auto col-lg-7 offset-lg-1">
+														19-22 Jun 2025													</time>
+													<div class="country  col-auto  col-lg-4">
+														Sweden													</div>
+												</div>
+											</a>
+																					<a  href="
+														https://orienteering.sport/event/world-orienteering-championships-2025/														" class="front_event_tr  dt_22">
+												<h3 class="front_event_td name col-12 col-lg-8 justify-content-between justify-content-lg-start">
+													World Orienteering Championships 2025
+																									</h3>
+												<div class="front_event_td justify-content-start justify-content-lg-center details col-12 col-lg-4 row">
+													<time class="date col-auto col-lg-7 offset-lg-1">
+														08-12 Jul 2025													</time>
+													<div class="country  col-auto  col-lg-4">
+														Finland													</div>
+												</div>
+											</a>
+																					<a  href="
+														https://orienteering.sport/event/european-orienteering-championships-3/														" class="front_event_tr  dt_22">
+												<h3 class="front_event_td name col-12 col-lg-8 justify-content-between justify-content-lg-start">
+													European Orienteering Championships
+																									</h3>
+												<div class="front_event_td justify-content-start justify-content-lg-center details col-12 col-lg-4 row">
+													<time class="date col-auto col-lg-7 offset-lg-1">
+														27-31 Aug 2025													</time>
+													<div class="country  col-auto  col-lg-4">
+														Belgium													</div>
+												</div>
+											</a>
+										
+								</div>
+							</div>
+						</div>
+						<div class="mt-4  d-flex justify-content-end nav_btns">
+							<a href="https://orienteering.sport/live/" class="btn v3">
+								VIEW ALL EVENTS							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+					<div class="line-block large"></div>
+		
+		
+		
+
+		
+
+		
+			<div class="news_list">
+				<div class="container">
+					<div class="row">
+														<div class="col-12 col-md-6 pt-3 pb-3">
+									<div class="NI_wrap shadow">
+																					<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+												<a href="https://orienteering.sport/portugal-appointed-as-cx80-emtboc-2026-host-wmtboc-2027-to-be-held-in-latvia/" class="image">
+													<img width="570" height="325" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20570%20325'%3E%3C/svg%3E" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2022/05/2022_cx80_worldcup_emtboc-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2022/05/2022_cx80_worldcup_emtboc-270x155.jpg 270w" data-lazy-sizes="(max-width: 570px) 100vw, 570px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2022/05/2022_cx80_worldcup_emtboc-570x325.jpg" /><noscript><img width="570" height="325" src="https://orienteering.sport/wp-content/uploads/2022/05/2022_cx80_worldcup_emtboc-570x325.jpg" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2022/05/2022_cx80_worldcup_emtboc-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2022/05/2022_cx80_worldcup_emtboc-270x155.jpg 270w" sizes="(max-width: 570px) 100vw, 570px" /></noscript>												</a>
+											</div>
+																				<div class="NI_details  p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/portugal-appointed-as-cx80-emtboc-2026-host-wmtboc-2027-to-be-held-in-latvia/">Portugal appointed as CX80 EMTBOC 2026 host, WMTBOC 2027 to be held in Latvia</a>
+											</h3>
+											<p>
+												The IOF Council has appointed the hosts of two international MTBO championships in the coming years following the recommendations from the MTBO Commission. The 2026 CX80 European MTBO Championships and European Junior an...											</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="date">
+													2025-02-05												</div>
+												<div class="tags">
+													<a href="https://orienteering.sport/news/front/">Front</a><a href="https://orienteering.sport/news/inside-iof/">Inside IOF</a><a href="https://orienteering.sport/news/mtbo/">MTBO</a>												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="col-12 col-md-6 pt-3 pb-3">
+									<div class="NI_wrap shadow">
+																					<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+												<a href="https://orienteering.sport/guidelines-and-checklists-for-organising-sustainable-events-available/" class="image">
+													<img width="570" height="325" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20570%20325'%3E%3C/svg%3E" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2025/01/esc_guidelines_checklists-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/01/esc_guidelines_checklists-270x155.jpg 270w" data-lazy-sizes="(max-width: 570px) 100vw, 570px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2025/01/esc_guidelines_checklists-570x325.jpg" /><noscript><img width="570" height="325" src="https://orienteering.sport/wp-content/uploads/2025/01/esc_guidelines_checklists-570x325.jpg" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2025/01/esc_guidelines_checklists-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2025/01/esc_guidelines_checklists-270x155.jpg 270w" sizes="(max-width: 570px) 100vw, 570px" /></noscript>												</a>
+											</div>
+																				<div class="NI_details  p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/guidelines-and-checklists-for-organising-sustainable-events-available/">Guidelines and checklists for organising sustainable events available</a>
+											</h3>
+											<p>
+												What should you consider in relation to e.g. Animals, Catering and Emissions when organising a sustainable orienteering event? A new set of guidelines and checklists, available on orienteering.sport, can help answer this...											</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="date">
+													2025-01-27												</div>
+												<div class="tags">
+													<a href="https://orienteering.sport/news/trailo/">TrailO</a><a href="https://orienteering.sport/news/mtbo/">MTBO</a><a href="https://orienteering.sport/news/orienteering/">Orienteering</a><a href="https://orienteering.sport/news/inside-iof/">Inside IOF</a><a href="https://orienteering.sport/news/front/">Front</a><a href="https://orienteering.sport/news/skio/">SkiO</a>												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="col-12 col-md-6 pt-3 pb-3">
+									<div class="NI_wrap shadow">
+																					<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+												<a href="https://orienteering.sport/more-sustainable-event-service-fees-and-anti-doping-contribution-system-approved/" class="image">
+													<img width="500" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20200'%3E%3C/svg%3E" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2.jpg 500w, https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2-300x120.jpg 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2.jpg" /><noscript><img width="500" height="200" src="https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2.jpg" class="attachment-news_thumb size-news_thumb wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2.jpg 500w, https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2-300x120.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>												</a>
+											</div>
+																				<div class="NI_details  p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/more-sustainable-event-service-fees-and-anti-doping-contribution-system-approved/">More sustainable Event Service fees and Anti-Doping Contribution system approved</a>
+											</h3>
+											<p>
+												The IOF Council has approved a new Event Service Fee System and Anti-Doping Contribution System for MTB Orienteering, Ski Orienteering and Trail Orienteering events. The new fees aim to create a better and financially mo...											</p>
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="date">
+													2025-01-20												</div>
+												<div class="tags">
+													<a href="https://orienteering.sport/news/front/">Front</a><a href="https://orienteering.sport/news/skio/">SkiO</a><a href="https://orienteering.sport/news/trailo/">TrailO</a><a href="https://orienteering.sport/news/mtbo/">MTBO</a><a href="https://orienteering.sport/news/inside-iof/">Inside IOF</a>												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+													<!--<div class="col-12 col-md-6 pt-3 pb-3">
+							<div class="NI_wrap shadow">
+								<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+									<a href="https://orienteering.sport/new-podcast-daniel-hubmann-on-winning-in-davos-and-woc2023-on-home-soil/"
+									   class="image">
+										<img width="570" height="325"
+											 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20570%20325'%3E%3C/svg%3E"
+											 data-src="https://orienteering.sport/wp-content/uploads/2022/10/long-1-570x325.jpg?x49098"
+											 class="attachment-news_thumb size-news_thumb wp-post-image lazy" alt=""
+											 data-srcset="https://orienteering.sport/wp-content/uploads/2022/10/long-1-570x325.jpg 570w, https://orienteering.sport/wp-content/uploads/2022/10/long-1-270x155.jpg 270w"
+											 data-sizes="(max-width: 570px) 100vw, 570px"> </a>
+								</div>
+								<div class="NI_details  p-4">
+									<h3 class="subtitle">
+										<a href="https://orienteering.sport/new-podcast-daniel-hubmann-on-winning-in-davos-and-woc2023-on-home-soil/">
+											New podcast: Daniel Hubmann on winning in Davos and WOC2023 on home
+											soil </a>
+									</h3>
+									<p>
+										Daniel Hubmann (SUI) impressed the orienteering world, when he delivered three
+										top performances during the World Cup Final on home soil in Davos in October,
+										with the long distance win as the icing on the cake. In the new... </p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="date">
+											2022-12-08
+										</div>
+										<div class="tags">
+											<a href="https://orienteering.sport/news/front/">Front</a><a
+												href="https://orienteering.sport/news/orienteering/">Orienteering</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 pt-3 pb-3">
+							<div class="NI_wrap shadow">
+								<div class="NI_image hover_in d-flex justify-content-center align-items-center">
+									<a href="https://orienteering.sport/digital-footo-event-adviser-seminar/"
+									   class="image">
+										<img width="500" height="200"
+											 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20200'%3E%3C/svg%3E"
+											 data-src="https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2.jpg?x49098"
+											 class="attachment-news_thumb size-news_thumb wp-post-image lazy" alt=""
+											 data-srcset="https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2.jpg 500w, https://orienteering.sport/wp-content/uploads/2020/08/news_iof_logo_500px2-300x120.jpg 300w"
+											 data-sizes="(max-width: 500px) 100vw, 500px"> </a>
+								</div>
+								<div class="NI_details  p-4">
+									<h3 class="subtitle">
+										<a href="https://orienteering.sport/digital-footo-event-adviser-seminar/">
+											Digital FootO Event Adviser Seminar </a>
+									</h3>
+									<p>
+										After the success of last year’s edition, the IOF Foot Orienteering Commission
+										decided to organise the online seminar for the education of Event Advisers and
+										Senior Event Advisers on 29th November and 1st December. The s... </p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="date">
+											2022-12-07
+										</div>
+										<div class="tags">
+											<a href="https://orienteering.sport/news/front/">Front</a><a
+												href="https://orienteering.sport/news/orienteering/">Orienteering</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>-->
+						<div class="col-12 col-md-6 pt-3 pb-3 ">
+																<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/iof-woc-clinic-2025-is-open-for-applications/">
+													IOF WOC Clinic 2025 is open for applications												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/be-a-part-of-shaping-a-new-communication-strategy-for-international-orienteering/">
+													Be a part of shaping a new communication strategy for International Orienteering												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/amended-regulations-for-iof-independent-athlete-status/">
+													Amended regulations for IOF Independent Athlete Status												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/iof-yla-2025-is-open-for-applications/">
+													IOF YLA 2025 is open for applications												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/70-event-advisers-shared-experiences/">
+													70 event advisers shared experiences												</a>
+											</h3>
+										</div>
+									</div>
+																	<div class="NI_wrap shadow short_post mb-3">
+										<div class="NI_details p-4">
+											<h3 class="subtitle">
+												<a href="https://orienteering.sport/open-meeting-on-skio-rules-and-map-symbols-on-sunday/">
+													New Map Symbols introduced for 2024/25 Ski O Season												</a>
+											</h3>
+										</div>
+									</div>
+														</div>
+					</div>
+				</div>
+			</div>
+
+		
+
+		 					<div class="carousel_block shadow">
+			   
+
+									<div class="container-fluid pb-2">
+						<div class="hidden_block row flex-wrap flex-md-nowrap align-items-center">
+							<div class="col-12 col-md-2 carousel_title text-center text-md-left pt-3 pt-md-0">
+								Sponsors							</div>
+							<div class="col-12 col-md-8 px-md-0">
+								<div id="sponsors_carousel" class="owl-carousel owl-theme carousel">
+																			<div class="item w-100">
+																						<a class=" w-100" target="_blank" href="https://www.lumonite.com/">
+												<img width="300" height="240" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20240'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="" decoding="async" data-lazy-src="https://orienteering.sport/wp-content/uploads/2021/04/lumonite_banner_1.jpg" /><noscript><img width="300" height="240" src="https://orienteering.sport/wp-content/uploads/2021/04/lumonite_banner_1.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" /></noscript>											</a>
+										</div>
+																			<div class="item w-100">
+																						<a class=" w-100" target="_blank" href="https://enricheducationuk.com/">
+												<img width="800" height="531" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20531'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo.jpg 800w, https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo-300x199.jpg 300w, https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo-768x510.jpg 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo.jpg" /><noscript><img width="800" height="531" src="https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo.jpg 800w, https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo-300x199.jpg 300w, https://orienteering.sport/wp-content/uploads/2022/12/enrich_logo-768x510.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>											</a>
+										</div>
+																			<div class="item w-100">
+																						<a class=" w-100" target="_blank" href="https://sign-sport.com/">
+												<img width="2466" height="1532" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202466%201532'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1.png 2466w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-300x186.png 300w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-1024x636.png 1024w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-768x477.png 768w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-1536x954.png 1536w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-2048x1272.png 2048w" data-lazy-sizes="(max-width: 2466px) 100vw, 2466px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1.png" /><noscript><img width="2466" height="1532" src="https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1.png" class="attachment-full size-full wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1.png 2466w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-300x186.png 300w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-1024x636.png 1024w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-768x477.png 768w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-1536x954.png 1536w, https://orienteering.sport/wp-content/uploads/2020/02/sign-logo-1-2048x1272.png 2048w" sizes="(max-width: 2466px) 100vw, 2466px" /></noscript>											</a>
+										</div>
+																			<div class="item w-100">
+																						<a class=" w-100" target="_blank" href="https://www.sepa.fi/en/">
+												<img width="460" height="460" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20460%20460'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="" decoding="async" data-lazy-srcset="https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460.jpg 460w, https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460-300x300.jpg 300w, https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460-150x150.jpg 150w" data-lazy-sizes="(max-width: 460px) 100vw, 460px" data-lazy-src="https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460.jpg" /><noscript><img width="460" height="460" src="https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" srcset="https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460.jpg 460w, https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460-300x300.jpg 300w, https://orienteering.sport/wp-content/uploads/2021/08/01_sepa_logo_460x460-150x150.jpg 150w" sizes="(max-width: 460px) 100vw, 460px" /></noscript>											</a>
+										</div>
+																	</div>
+							</div>
+						</div>
+					</div>
+							</div>
+				
+		 			<div class="carousel_block shadow">
+				<div class="container-fluid">
+					<div class="hidden_block row flex-wrap flex-md-nowrap justify-content-between align-items-center">
+						<div class="col-12 col-md-auto carousel_title text-center text-md-left pt-3 pt-md-0">
+							Member of						</div>
+						<div class="col-12 col-md pl-0 pr-0">
+							<div id="partners_carousel" class="owl-carousel owl-theme carousel v2">
+																	<div class="item w-100">
+																					<a class=" w-100" target="_blank" href="http://www.olympic.org/">
+												<img width="198" height="115" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20198%20115'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2019/01/if-en-rgb-colour-1-e1636454402145.png" /><noscript><img width="198" height="115" src="https://orienteering.sport/wp-content/uploads/2019/01/if-en-rgb-colour-1-e1636454402145.png" alt="" /></noscript>
+											</a>
+																			</div>
+																	<div class="item w-100">
+																					<a class=" w-100" target="_blank" href="https://www.theworldgames.org/">
+												<img width="305" height="118" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20305%20118'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2019/01/partner-logo-TWG.svg" /><noscript><img width="305" height="118" src="https://orienteering.sport/wp-content/uploads/2019/01/partner-logo-TWG.svg" alt="" /></noscript>
+											</a>
+																			</div>
+																	<div class="item w-100">
+																					<a class=" w-100" target="_blank" href="http://www.fisu.net/">
+												<img width="231" height="209" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20231%20209'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2020/03/fisu.svg" /><noscript><img width="231" height="209" src="https://orienteering.sport/wp-content/uploads/2020/03/fisu.svg" alt="" /></noscript>
+											</a>
+																			</div>
+																	<div class="item w-100">
+																					<a class=" w-100" target="_blank" href="http://www.isfsports.org/">
+												<img width="689" height="211" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20689%20211'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2019/01/partner-logo-isf.svg" /><noscript><img width="689" height="211" src="https://orienteering.sport/wp-content/uploads/2019/01/partner-logo-isf.svg" alt="" /></noscript>
+											</a>
+																			</div>
+																	<div class="item w-100">
+																					<a class=" w-100" target="_blank" href="http://www.arisf.org/">
+												<img width="1413" height="543" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201413%20543'%3E%3C/svg%3E" alt="" data-lazy-src="https://orienteering.sport/wp-content/uploads/2024/03/arisf_logo_rgb_colour-b-e1711390587378.jpg" /><noscript><img width="1413" height="543" src="https://orienteering.sport/wp-content/uploads/2024/03/arisf_logo_rgb_colour-b-e1711390587378.jpg" alt="" /></noscript>
+											</a>
+																			</div>
+																							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+                <div data-wpr-lazyrender="1" class="clear"></div>
+            </main>
+        </div><!--/wrapper-->
+        <footer data-wpr-lazyrender="1">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-12">
+                        <p><strong>International Orienteering Federation (IOF)</strong><br />
+Box 9033, SE-650 09 Karlstad, SWEDEN</p>
+<p><a href="/cdn-cgi/l/email-protection#ef868089af809d868a819b8a8a9d868188c19c9f809d9b"><span class="__cf_email__" data-cfemail="224b4d44624d504b474c564747504b4c450c51524d5056">[email&#160;protected]</span></a><br />
+<a href="https://orienteering.sport/iof/governance-and-organisation/iof-office/">Contact IOF Office</a><br />
+<a href="https://orienteering.sport/rss-feed/">RSS</a></p>
+                    </aside>
+                </div>
+            </div>
+
+            <!--<div style="display: none;">
+                        <div class="box-modal" id="modal">
+                            <div class="box-modal_close arcticmodal-close">x</div>
+                            <div>
+                                <form id="form1" name="contacts-form" action="" method="post">
+                                    <input type="text" class="name" name="first_name" placeholder="Ваше имя" required>
+                                    <input type="tel" class="phone" name="phone" placeholder="Ваш телефон" required>
+                                    <input type="email" class="email" name="email" placeholder="Ваш e-mail" required>
+                                    <textarea name="comment" class="comment" rows="6" placeholder="Текст сообщения"></textarea>
+                                    <input type="submit" name="submit" class="btn" value="ОТПРАВИТЬ">
+                                    <input type="hidden" name="form_title" value="Текст в тему письма">
+                                    <center style="display: none;"></center>
+                                </form>
+                            </div>
+                        </div>
+                    </div>-->
+        </footer>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">
+            var mainSponsorsLength = document.querySelectorAll('#sponsors_main_carousel .item').length;
+
+                            var mainSponsorsData = {
+                    autoplay:true,
+                    autoplayTimeout:3000,
+                    autoplayHoverPause:true,
+                    dots:false,
+                    nav:false,
+                    responsive:{
+                        0:{
+                            items:1,
+                            margin:0,
+                            loop: ( mainSponsorsLength > 1 ) ? true : false
+                        },
+                        576:{
+                            items:2,
+                            margin:20,
+                            loop: ( mainSponsorsLength > 2 ) ? true : false
+                        },
+                        991:{
+                            items:3,
+                            margin:40,
+                            loop: ( mainSponsorsLength > 3 ) ? true : false
+                        },
+                    }
+                };
+                    </script>
+
+        <script type="text/javascript" id="jquery.wp-smartcrop-js-extra">
+/* <![CDATA[ */
+var wpsmartcrop_options = {"focus_mode":"power-lines"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/plugins/wp-smartcrop/js/jquery.wp-smartcrop.min.js?ver=2.0.10" id="jquery.wp-smartcrop-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3" id="jquery-ui-datepicker-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="jquery-ui-datepicker-js-after">window.addEventListener('DOMContentLoaded', function() {
+/* <![CDATA[ */
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"dd.mm.yy","firstDay":1,"isRTL":false});});
+/* ]]> */
+});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/orienteering.sport","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/themes/IOF/js/OwlCarousel2/owl.carousel.min.js?ver=6.7.1" id="owl-carousel-js-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/themes/IOF/js/jquery.countdown.min.js?ver=6.7.1" id="countdown-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/js/mail.js?ver=1736412228" id="theme_mail-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/js/loadmore.js?ver=1736412228" id="theme_loadmore-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://orienteering.sport/wp-content/cache/min/1/wp-content/themes/IOF/js/custom.js?ver=1736412228" id="theme_js-js" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://orienteering.sport/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+            </body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1739282170 -->

@@ -1,0 +1,69 @@
+Lab 1 : Summer Orienteering
+
+In the sport (or "activity", depending on your level of fitness/competitiveness) of orienteering, you are given a map with terrain information, elevation contours, and a set or sequence of locations to visit ("controls"). There is a combination of athletic skills and planning skills required to succeed - a smarter competitor who can figure out the best way to get from point to point may beat out a more athletic competitor who makes poor choices!
+
+In this lab, you are given machine-readable inputs so that you can use an algorithm to determine the best path for you to take depending on your ability.
+
+
+Credit: Eric Dudley
+The Maps
+
+In an ordinary orienteering event, the map you get will be quite detailed. Different background colors show the type of terrain (see the table below), while buildings, boulders, man-made objects and other notable features are shown with different symbols.
+
+For this assignment, you are given much simpler inputs representing the event's course:
+A 395x500 simplified color-only terrain map (color legend below). Each pixel corresponds to an area of to 10.29 m in longitude (X) and 7.55 m in latitude (Y). You must take these dimensions into your account of distance.
+A white-space deliminated (not guaranteed to be spaces or tabs) text file of values corresponding to the elevation of each pixel in the terrain map in meters. The elevation file corresponds to an area of 400x500 (500 lines of 400 double values, each representing an elevation in meters). To address the difference in width between the elevation and terrain files you should just ignore the last five values on each line of the elevation file.
+The Basic Event
+
+As for the points you will need to go visit, those will come in a simple text file, two integers per line, representing the (x,y) pixel (origin, (0,0), the at upper left of the image) in the terrain map containing the location. For example. In our scenario, the sequence of points must be visited in the order given.
+
+The Terrain
+
+We now have a terrain map, elevation, and the control points that we have to visit. The goal is to complete the course in the shortest time. Going in a straight line, even if possible, is often not the quickest path. In addition to elevation, you will also move through different terrain at different speeds. Rather than telling you exactly how fast, you need to decide based on some representative photos how fast you can travel through these terrains:
+Terrain type	Color on map	Photo (legend)
+Open land	#F89412 (248,148,18)	A
+Rough meadow	#FFC000 (255,192,0)	B
+Easy movement forest	#FFFFFF (255,255,255)	C · D
+Slow run forest	#02D03C (2,208,60)	E
+Walk forest	#028828 (2,136,40)	F
+Impassible vegetation	#054918 (5,73,24)	G
+Lake/Swamp/Marsh	#0000FF (0,0,255)	H · I · J
+Paved road	#473303 (71,51,3)	K · L
+Footpath	#000000 (0,0,0)	M · N
+Out of bounds	#CD0065 (205,0,101)	
+Note: You can treat Impassible Vegetation as either very difficult or impossible to traverse.
+Finding the Optimal Path
+
+We now have all of the information needed to plan the quickest path. This is a large environment, so, while uniform-cost search might be acceptable for short paths, it is much faster (and not much harder!) to implement an A* search to handle orienteering events. For testing purposes, you should assume that walking on an incline or decline is as difficult as walking on flat land .
+Heuristic
+
+Consider your heuristic function carefully, an inadmissible or non-monotonic heuristic could lead to suboptimal paths. A good place to start is with 3-D distance; however, you should be careful when factoring in the terrain.
+Input
+
+Name your program 'lab1'. It should take 4 arguments, in order: terrain-image, elevation-file, path-file, output-image-filename.
+Python would look like, $python3 lab1.py terrain.png mpp.txt red.txt redOut.png
+
+Output
+
+You should output an image of the input map with the optimal path drawn on top of it. This path should be 1 pixel wide and have the RGB value: #a146dd (161, 70, 221) You should also output the total path length in meters to the terminal. Nothing else should be written to std:out. Here is an example path for the brown trail (with a different path color). Note that your solution may produce a different result in some cases and still be correct. This is especially true on the park map where our terrain penalties will differ. The test cases linked below have less variance and your output should match those more closely.
+Some Hints/Tips
+
+You are welcome to write your solution in Python, or Java. Regardless, your program should run on Gradescope.
+Submit to Gradescope early and often. This will ensure that you are properly handling I/O and everything runs correctly.
+Both languages have standard libraries that implement the Priority Queue. Be sure to read the docs, both require you to define a comparator for your classes.
+Remember that HashSets and HashMaps require you to define a hash function and a equality function.
+Both languages have image libraries that will help you read and write the map files.
+In Python, you can use the Python Image Library to both read an image in to an array of pixels as well as to modify those pixels to output your results. (I used Image.open(), .load() and .save() on the CS machines.)
+In Java, you can use the ImageIO class to read in an image into a BufferedImage object and get/set pixels from there.
+You are welcome to hard-code things which make sense to hard code, such as the color values. Be careful if you hard code file names that it will still work when downloaded and run on a different machine.
+You should get the graphical output working first, it will help you debug everything.
+A pixel's neighbors can be defined as either the 4 pixels that share an edge (the cardinal directions) or the 8 pixels that share either an edge or a corner (the cardinal directions and north-east, north-west, etc). Either is acceptable and test cases have been generated for both.
+You do not have to do anything fancy like moving faster or slower depending on elevation - it is sufficient for the elevation to simply add to the 3d distance between pixels. For those who insist on doing something beyond that, get everything working with a simple handling of elevation first before trying anything special.
+Grading
+
+Test cases 84%
+Proper handling of I/O and Terrain 4%
+A* and Heuristic function 12%
+Testing
+
+You should try submitting your program to gradescope as early as possible. This will ensure you are following the correct input and output format. If you want to test locally, you can download older versions of the testcases here.
